@@ -70,7 +70,7 @@ df.describe().T
 
 
 app = dash.Dash(__name__)
-
+server = app.server
 app.layout = html.Div([
     dcc.Graph(id='scatter-plot-origin-df'),
     dcc.Dropdown(
